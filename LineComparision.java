@@ -3,10 +3,25 @@
 
 		public static void main(String[] args) {
 		//variables
-		int x1=1, y1=2, x2=4, y2=5;
+      double x1=1;
+      double y1=5;
+      double x2=6;
+      double y2=7;
+
+      double x3=1;
+      double y3=6;
+      double x4=7;
+      double y4=8;
 		//Computation
-		double length = Math.sqrt(Math.pow(x2-x1, 2) + Math.pow(y2-y1, 2));
-		System.out.println(length);
-	}
+      double line1 = Math.sqrt((Math.pow(x2 - x1, 2)) + (Math.pow(y2 - y1, 2)));
+      System.out.println("Length of first line is: " +line1);
+      double line2 = Math.sqrt((Math.pow(x4 - x3, 2)) + (Math.pow(y4 - y3, 2)));
+      System.out.println("Length of second line is: " +line2);
+
+      if (line1==line2)
+         System.out.println("Both the lines are equal.");
+      else
+         System.out.println("Both the lines are not equal.");
+   	}
 }
 
