@@ -19,9 +19,10 @@
       System.out.println("Length of second line is: " +line2);
 
       if (line1==line2)
-         System.out.println("Both the lines are equal.");
+         System.out.println("Both the lines are equal");
+      else if (line1 > line2)
+      	System.out.println("Line1 is Greater");
       else
-         System.out.println("Both the lines are not equal.");
-   	}
+			System.out.println("Line2 is Greater");
+	   }
 }
-
